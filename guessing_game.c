@@ -2,8 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-int main()
-{
+int main(){
     int guess, guesses, answer;
     const int min =1;
     const int max =100;
@@ -13,17 +12,14 @@ int main()
     answer = (rand() % max) + min;
     //printf("%d\n",answer); 
 
-    do
-    {
+    do{
         printf("Enter guess : ");
         scanf("%d", &guess);
 
-        if (guess > answer)
-        {
+        if (guess > answer){
             printf("It\'s too high!\n");
         }
-        else if(guess < answer)
-        {
+        else if(guess < answer){
             printf("It\'s too low!\n");
         }
         else{
@@ -34,7 +30,7 @@ int main()
     printf("********************\n");
     printf("Answer : %d\n", answer);
     printf("Guessed teams : %d\n", guesses);
+    printf("Thanks");
     printf("********************\n\n");
-
 return 0;
 }
